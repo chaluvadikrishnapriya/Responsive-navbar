@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="vignan.jpg" alt="vignan pic"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">course</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text">
+        
+        </div>
+    </section>
+    <script > var navlinks=document.getElementById("nav-links");
+        function showmenu()
+        {
+            navlinks.style.right ="0";
+
+        }
+        function hideMenu()
+        {
+            navlinks.style.right="-200px";
+            
+        }
+    </script>
+</body>
+</html>
